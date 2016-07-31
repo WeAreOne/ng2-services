@@ -1,12 +1,14 @@
 import { Component, Inject, ReflectiveInjector } from '@angular/core';
 import { SizeService } from "./services/SizeService";
 import { ViewportService } from "./services/ViewportService";
+import { SubComponent } from "./sub";
 
 @Component({
   moduleId: module.id,
   selector: 'app-root',
   templateUrl: 'app.component.html',
-  styleUrls: ['app.component.css']
+  styleUrls: ['app.component.css'],
+  directives: [ SubComponent ]
 })
 export class AppComponent {
   title = 'Injection de dépendances';
