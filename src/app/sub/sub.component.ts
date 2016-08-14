@@ -1,14 +1,12 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { Title } from "@angular/platform-browser";
-import { CustomService, SizeService } from "../services";
+import { SizeService } from "../services";
 
 @Component({
   moduleId: module.id,
   selector: 'app-sub',
   templateUrl: 'sub.component.html',
-  styleUrls: ['sub.component.css'],
-  providers: [ { provide: 'SizeService', useClass: CustomService } ],
-  viewProviders: [ Title ]
+  styleUrls: ['sub.component.css']
 })
 export class SubComponent implements OnInit {
 
